@@ -1,0 +1,52 @@
+/* create color variables */
+:root{
+    --header-bg-colour: #180937;
+    --link-colour: #FAFAFA;
+    --link-hover-colour: #ffd700;
+    --footer-bg-color: #12072a;
+    --footer-text-colour: #fafafa;
+    --form-input-bg-color: #d2cbe2;
+    --button-bg-color: #04053b;
+    --button-text-color: #fafafa;
+    --button-hover-bg-bolor: #fafafa;
+    --button-hover-text-color: #04053b
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin:auto;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+header{
+    width: 100%;
+    background-color: var(--button-bg-color);
+    color: var(--link-colour);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-colour);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+footer > div{
+    text-align: center;
+}
+

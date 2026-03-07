@@ -1,7 +1,7 @@
 import os 
 from dotenv import load_dotenv, find_dotenv
 
-# find the .env file if it is in the same 
+# find the .env file if it is in the same folder
 
 load_dotenv(find_dotenv())
 

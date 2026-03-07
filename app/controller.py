@@ -1,23 +1,12 @@
-# import settings and flask package
-from flask import Flask
-from config.settings import Config
-from config.database import close_db
+# import methods and objects from flask
+from flask import render_template, redirect, url_for, request, session, flash
 
-# Initialise an instance of Flask
-# __name__ helps flask locate resources templates and static files
-app = Flask(__name__)
+from config.database import get_db
 
-# Use the secret key -> Create sessions
-app.secret_key = Config.SECRET_KEY
+from app import app
 
-# Load configuration setting
-app.config.from_object(Config)
 
-# close the database automatically
-@app.teardown_appcontext
-def teardown_db(exception):
-    """Closes trhe database connection when the application ends"""
-    close_db()
-
-#We must ensure "app" is fully initialized before the controller tries to use it
-from app import controller
+# create the routes
+@app.route('/', methods = ["GET"])
+def index():
+    return render_template("index.html")

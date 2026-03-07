@@ -31,3 +31,9 @@ Color choices were made following accessibility best practices:
 ![to do list design](/documentation/design/todo_list_designs.png)
 
 if you want to check individual designs click [here](/documentation/design/design.md)
+
+### Data Base Design 
+for this project three tables have been designed. You can find the data types for each fields [here](/documentation/data_base_design/database_design%20-%20tables.pdf)
+
+ERD Schema 
+![Database Schema](/documentation/data_base_design/todo_list_database_relations.webp)

@@ -54,5 +54,5 @@ def get_db():
 def close_db():
     if Database._instance:
         Database._instance._close_connection()
-        Database._instance = None
+        Database._instance = None # Reset the instance 
         
